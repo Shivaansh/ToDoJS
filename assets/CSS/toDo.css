@@ -6,4 +6,10 @@ body{
     background: DarkTurquoise;
     width: 360px;
     margin: 0 auto;
+    border: 3px solid red;
+}
+
+.completed{
+    color: green;
+    text-decoration: line-through;
 }
