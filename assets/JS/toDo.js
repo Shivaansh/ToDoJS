@@ -1,12 +1,14 @@
 console.log(" toDo.js connected");
 
 //check off/uncheck ToDos by clicking
-$("li").click(function(){
+
+//listener added to ul to listen for any li's added in the future
+$("ul").on("click", "li", function(){
     $(this).toggleClass("completed"); //class created in CSS file
 });
 
 //click on X to delete TO-DOs
-$("span").click(function(event)
+$("ul").on("click", "span", function(event)
 {
     //fade out and remove parent <li>
     $(this).parent().fadeOut("fast", function()
@@ -14,4 +16,20 @@ $("span").click(function(event)
         $(this).remove(); //NOT parent
     });
     event.stopPropagation(); //prevent event bubbling
-}); 
+});
+
+//add todos
+$("#addItem").keypress(function(event)
+{
+    if(event.which === 13)
+    {   
+        //store new todo text
+        var newItem = $(this).val();
+
+        //reset input box text
+        $(this).val("");
+        
+        //create new <li>
+        $("ul").append("<li> <span>X</span> " + newItem + "</li>");
+    }
+});
