@@ -1,3 +1,9 @@
 body{
     background: orange;
 }
+
+#container{
+    background: DarkTurquoise;
+    width: 360px;
+    margin: 0 auto;
+}
