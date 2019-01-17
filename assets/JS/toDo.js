@@ -33,3 +33,8 @@ $("#addItem").keypress(function(event)
         $("ul").append("<li> <span><i class='far fa-trash-alt'></i></span> " + newItem + "</li>");
     }
 });
+
+$(".fa-check").click(function()
+    {
+        $("#addItem").fadeToggle("fast");
+    });
