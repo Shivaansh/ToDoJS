@@ -30,6 +30,6 @@ $("#addItem").keypress(function(event)
         $(this).val("");
         
         //create new <li>
-        $("ul").append("<li> <span>X</span> " + newItem + "</li>");
+        $("ul").append("<li> <span><i class='far fa-trash-alt'></i></span> " + newItem + "</li>");
     }
 });

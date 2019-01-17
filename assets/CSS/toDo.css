@@ -20,10 +20,18 @@ Used to check/uncheck todos
     text-decoration: line-through;
 }
 
+.fa-check{
+    float: right;
+}
+
+.fa-trash-alt{
+    color: red;
+}
 /*
 Visuals for heading
 */
 #header{
+    font-family: 'Playfair Display', serif;
     background: rgb(15, 65, 230);
     color: white;
     margin: 0;
@@ -41,6 +49,10 @@ ul{
 
 body{
     font-family: 'Playfair Display', serif;
+    background: #3494E6;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EC6EAD, #3494E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 li{
@@ -60,7 +72,7 @@ li:nth-child(2n){
 }
 
 #addItem{
-    font-size: 20px;
+    font-size: 15px;
     background-color: whitesmoke;
     color: rgb(29, 69, 247);
     width: 100%;
@@ -73,4 +85,9 @@ input:focus{
     background: white;
     border: 1px solid blue;
     outline: none;
+}
+
+span{
+    height: 40px;
+    margin-right 20px: 
 }
