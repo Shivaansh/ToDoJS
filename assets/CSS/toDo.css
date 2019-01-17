@@ -2,6 +2,9 @@ body{
     background: orange;
 }
 
+/*
+Used to change properties of ToDo box
+*/
 #container{
     background: DarkTurquoise;
     width: 360px;
@@ -9,6 +12,9 @@ body{
     border: 3px solid red;
 }
 
+/*
+Used to check/uncheck todos
+*/
 .completed{
     color: green;
     text-decoration: line-through;
